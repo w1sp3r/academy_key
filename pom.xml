@@ -5,21 +5,27 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
+		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<!--<groupId>com.academy.key</groupId>-->
+	<groupId>com.academy.key</groupId>
 	<artifactId>academy_key</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>academy.key</name>
 	<description>Demo with flowable and spring boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
+		<snakeyaml.version>1.33</snakeyaml.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.13.4.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,13 +39,12 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.200</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.flowable</groupId>
 			<artifactId>flowable-spring-boot-starter-basic</artifactId>
-			<version>6.7.0</version>
+			<version>6.7.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -49,12 +54,11 @@
 		<dependency>
 			<groupId>org.flowable</groupId>
 			<artifactId>flowable-spring-boot-starter-rest</artifactId>
-			<version>6.7.0</version>
+			<version>6.7.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.22</version>
 		</dependency>
 		<dependency>
 			<groupId>com.twilio.sdk</groupId>

@@ -15,7 +15,7 @@ public class TwilioService {
 
     private static final String AUTH_TOKEN = "YOUR ACCOUNT AUTH";
 
-    private static final String NUMBER = "A PHONE NUMBER I TWILIO";
+    private static final String NUMBER = "A PHONE NUMBER IN TWILIO";
     // endregion
 
     @Transactional

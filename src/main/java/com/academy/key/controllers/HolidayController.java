@@ -18,7 +18,7 @@ import java.util.List;
 @RequestMapping(value = "/process", produces = MediaType.APPLICATION_JSON_VALUE)
 public class HolidayController {
 
-    public HolidayService holidayService;
+    private final HolidayService holidayService;
 
     @Autowired
     public HolidayController(HolidayService holidayService) {

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component("holidayRejectedDelegate")
 public class HolidayRejectedDelegate implements JavaDelegate {
 
-    public TwilioService twilioService;
+    private final TwilioService twilioService;
 
     @Autowired
     public HolidayRejectedDelegate(TwilioService twilioService) {

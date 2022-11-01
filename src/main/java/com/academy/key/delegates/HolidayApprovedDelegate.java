@@ -11,17 +11,13 @@ import org.springframework.stereotype.Component;
 @Slf4j
 @Component("holidayApprovedDelegate")
 public class HolidayApprovedDelegate implements JavaDelegate {
-
-    private TwilioService twilioService;
-
+    private final TwilioService twilioService;
     @Autowired
     public HolidayApprovedDelegate(TwilioService twilioService){
         this.twilioService = twilioService;
     }
-
     @Override
     public void execute(DelegateExecution delegateExecution) {
-
         String APPROVE_MSG = "Hello %s! Your vacation has been approved!";
         final String employeeName = delegateExecution.getVariable("employee").toString();
 
